@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>VideoCall</title>
+    <%= csrf_meta_tags %>
+    <script src="https://static.opentok.com/v2/js/opentok.min.js"></script>
+    <script type ="text/javascript">
+      var api_key = '<%= @api_key %>';
+      var api_secret = '<%= @api_secret %>';
+      var session_id = '<%= @session_id %>';
+    </script>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application'%>
+  </head>
+
+  <body class="<%= @darkmode if @darkmode %>">
+    <%= yield %>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "video_call",
+  "private": true,
+  "dependencies": {
+    "@rails/webpacker": "4.2.2",
+    "node-emoji": "^1.10.0"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.11.0"
+  }
+}
